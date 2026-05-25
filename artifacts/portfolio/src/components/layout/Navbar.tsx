@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
-const logoUrl = "/logo.svg";
+const logoUrl = "/logo.png";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -23,7 +23,7 @@ export function Navbar() {
       <div className="container">
         <Link href="/" className="navbar-brand d-flex align-items-center gap-2">
           <img src={logoUrl} alt="Logo" className="h-10 w-auto" />
-          <span className="font-display font-bold text-xl text-primary m-0">Kernel Forge</span>
+          <span className="font-display font-bold text-xl m-0" style={{ background: "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%)", WebkitBackgroundClip: "text", color: "transparent" }}>Kernel Forge</span>
         </Link>
         <button
           className="navbar-toggler border-0 shadow-none text-foreground"

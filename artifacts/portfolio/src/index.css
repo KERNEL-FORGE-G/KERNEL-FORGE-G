@@ -155,3 +155,19 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.brand-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+}
+
+.project-logo-fit {
+  object-fit: contain;
+  background: linear-gradient(180deg, hsla(var(--background) / 0.95) 0%, hsla(var(--muted) / 0.75) 100%);
+  padding: 1rem;
+  border: 1px solid hsla(var(--border) / 0.8);
+}
+
+.section-shell {
+  border: 1px solid hsla(var(--card-border) / 0.8);
+  box-shadow: 0 16px 40px hsla(222 47% 11% / 0.08);
+}

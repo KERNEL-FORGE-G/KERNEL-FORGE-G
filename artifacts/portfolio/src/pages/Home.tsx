@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { SiJavascript, SiTypescript, SiPython, SiReact, SiNodedotjs, SiPostgresql, SiDocker, SiFigma } from "react-icons/si";
 import { ChevronDown, ArrowRight } from "lucide-react";
-const logoUrl = "/logo.svg";
+const logoUrl = "/logo.png";
 
 export function Home() {
   return (
