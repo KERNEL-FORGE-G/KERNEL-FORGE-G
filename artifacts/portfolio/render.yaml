@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kernel-forge-portfolio
+    runtime: static
+    rootDir: artifacts/portfolio
+    buildCommand: pnpm install --frozen-lockfile && pnpm build
+    staticPublishPath: dist/public
+    pullRequestPreviewsEnabled: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

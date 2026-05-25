@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { projects } from "@/data/projects";
+import { listProjectCards } from "@/controllers/project.controller";
 import { ArrowRight } from "lucide-react";
 
 export function Projects() {
@@ -20,16 +20,16 @@ export function Projects() {
         </div>
 
         <div className="row g-5">
-          {projects.map((project, index) => (
+          {listProjectCards().map((project, index) => (
             <div key={project.id} className="col-12" data-aos="fade-up" data-aos-delay={index * 100}>
-              <div className="card border-0 shadow-sm rounded-3xl overflow-hidden bg-card hover-lift transition-all">
+              <div className="card border-0 rounded-3xl overflow-hidden bg-card hover-lift transition-all section-shell">
                 <div className={`row g-0 ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
                   <div className="col-lg-6">
                     <div className="h-100 position-relative p-4 p-lg-5 bg-muted/30 d-flex align-items-center justify-content-center">
                       <img 
                         src={project.image} 
                         alt={project.title} 
-                        className="img-fluid rounded-xl shadow-lg w-100 object-cover"
+                        className="img-fluid rounded-xl shadow-lg w-100 project-logo-fit"
                         style={{ maxHeight: '400px' }}
                       />
                     </div>

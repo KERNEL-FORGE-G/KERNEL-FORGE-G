@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { useRoute, Link } from "wouter";
-import { projects } from "@/data/projects";
+import { getProjectDetail } from "@/controllers/project.controller";
 import { teamMembers } from "@/data/team";
 import { ArrowLeft, ExternalLink, Github, CheckCircle2, Download } from "lucide-react";
 
 export function ProjectDetail() {
   const [, params] = useRoute("/projets/:id");
-  const project = projects.find(p => p.id === params?.id);
+  const project = getProjectDetail(params?.id);
 
   if (!project) {
     return (
@@ -41,7 +41,7 @@ export function ProjectDetail() {
             <img 
               src={project.image} 
               alt={project.title} 
-              className="img-fluid rounded-3xl shadow-md w-100 mb-8 object-cover"
+              className="img-fluid rounded-3xl shadow-md w-100 mb-8 project-logo-fit"
               style={{ maxHeight: '500px' }}
             />
 
