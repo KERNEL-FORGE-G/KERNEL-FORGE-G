@@ -23,7 +23,7 @@ export function Navbar() {
       <div className="container">
         <Link href="/" className="navbar-brand d-flex align-items-center gap-2">
           <img src={logoUrl} alt="Logo" className="h-10 w-auto" />
-          <span className="font-display font-bold text-xl text-primary m-0">CamStudio</span>
+          <span className="font-display font-bold text-xl text-primary m-0">Kernel Forge</span>
         </Link>
         <button
           className="navbar-toggler border-0 shadow-none text-foreground"

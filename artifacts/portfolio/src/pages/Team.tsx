@@ -15,7 +15,7 @@ export function Team() {
         <div className="text-center mb-16" data-aos="fade-up">
           <h1 className="display-4 font-black text-foreground mb-4">Notre <span className="text-primary">Équipe</span></h1>
           <p className="lead text-muted-foreground max-w-2xl mx-auto">
-            La force de CamStudio réside dans la passion et l'expertise de ses membres. Découvrez les visages derrière nos lignes de code.
+            La force de Kernel Forge réside dans la passion et l'expertise de ses membres. Découvrez les visages derrière nos lignes de code.
           </p>
         </div>
 

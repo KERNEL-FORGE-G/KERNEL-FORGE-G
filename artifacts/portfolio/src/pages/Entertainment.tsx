@@ -40,7 +40,7 @@ export function Entertainment() {
         <div className="text-center mb-16" data-aos="fade-up">
           <h1 className="display-4 font-black text-foreground mb-4"><span className="text-secondary">Divertissement</span> & Culture</h1>
           <p className="lead text-muted-foreground max-w-2xl mx-auto">
-            La culture d'entreprise chez CamStudio, c'est un savant mélange de rigueur technique et de moments inoubliables.
+            La culture d'entreprise chez Kernel Forge, c'est un savant mélange de rigueur technique et de moments inoubliables.
           </p>
         </div>
 

@@ -20,7 +20,7 @@ export function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8"
           >
-            <img src={logoUrl} alt="CamStudio Logo" className="h-32 md:h-48 mx-auto drop-shadow-2xl animate__animated animate__pulse animate__infinite animate__slower" />
+            <img src={logoUrl} alt="Kernel Forge Logo" className="h-32 md:h-48 mx-auto drop-shadow-2xl animate__animated animate__pulse animate__infinite animate__slower" />
           </motion.div>
           
           <motion.h1 
@@ -29,7 +29,7 @@ export function Home() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="display-2 font-black mb-4 tracking-tight"
           >
-            Nous construisons le <span className="text-primary">futur numérique</span><br className="d-none d-md-block" /> du Cameroun.
+            Nous <span className="text-primary">forgeons</span> le futur<br className="d-none d-md-block" /> numérique du Cameroun.
           </motion.h1>
           
           <motion.p 

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useRoute, Link } from "wouter";
 import { projects } from "@/data/projects";
 import { teamMembers } from "@/data/team";
-import { ArrowLeft, ExternalLink, Github, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, CheckCircle2, Download } from "lucide-react";
 
 export function ProjectDetail() {
   const [, params] = useRoute("/projets/:id");
@@ -63,14 +63,28 @@ export function ProjectDetail() {
 
           <div className="col-lg-4" data-aos="fade-left">
             <div className="card border-0 shadow-sm bg-card rounded-3xl p-4 p-lg-5 sticky-top" style={{ top: '100px' }}>
+              <div className="mb-4">
+                <span className={`badge rounded-pill px-3 py-2 text-sm font-medium ${
+                  project.status === "production" ? "bg-success/15 text-success" :
+                  project.status === "beta" ? "bg-warning/15 text-warning" :
+                  "bg-secondary/15 text-secondary"
+                }`}>
+                  {project.status === "production" ? "En Production" : project.status === "beta" ? "Beta" : "En Cours"}
+                </span>
+              </div>
               <div className="d-flex flex-column gap-3 mb-8">
+                {project.downloadUrl && (
+                  <a href={project.downloadUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-lg rounded-pill w-100 d-flex align-items-center justify-content-center gap-2 text-white border-0" style={{ backgroundColor: 'hsl(var(--primary))' }} data-testid="btn-download">
+                    <Download size={20} /> Télécharger
+                  </a>
+                )}
                 {project.demoUrl && (
-                  <a href={project.demoUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-lg rounded-pill w-100 d-flex align-items-center justify-content-center gap-2 text-white border-0" style={{ backgroundColor: 'hsl(var(--primary))' }}>
-                    Voir le site en direct <ExternalLink size={20} />
+                  <a href={project.demoUrl} target="_blank" rel="noreferrer" className="btn btn-outline-primary btn-lg rounded-pill w-100 d-flex align-items-center justify-content-center gap-2 border-2" data-testid="btn-demo">
+                    Voir la démo <ExternalLink size={20} />
                   </a>
                 )}
                 {project.githubUrl && (
-                  <a href={project.githubUrl} target="_blank" rel="noreferrer" className="btn btn-outline-dark btn-lg rounded-pill w-100 d-flex align-items-center justify-content-center gap-2 border-2">
+                  <a href={project.githubUrl} target="_blank" rel="noreferrer" className="btn btn-outline-dark btn-lg rounded-pill w-100 d-flex align-items-center justify-content-center gap-2 border-2" data-testid="btn-github">
                     <Github size={20} /> Code Source
                   </a>
                 )}
