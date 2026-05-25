@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "gGEHq35Ch99EJjYT8SdLi"
+uri = "file://artifacts/portfolio/src/assets/team-1.png"
+type = "image"
+title = "Male developer portrait"
+
+[[generated]]
+id = "IH-R2fpq8bBIsiVprVUcO"
+uri = "file://artifacts/portfolio/src/assets/team-2.png"
+type = "image"
+title = "Female designer portrait"
+
+[[generated]]
+id = "ZMIWrj0cbj8fe8rjKYSYM"
+uri = "file://artifacts/portfolio/src/assets/team-3.png"
+type = "image"
+title = "Male data scientist portrait"
+
+[[generated]]
+id = "T8DH-sUMB41usVOgS38d9"
+uri = "file://artifacts/portfolio/src/assets/team-4.png"
+type = "image"
+title = "Female product manager portrait"
+
+[[generated]]
+id = "jd2JzH30ZrWVYWoIhdqId"
+uri = "file://artifacts/portfolio/src/assets/project-1.png"
+type = "image"
+title = "School app dashboard"
+
+[[generated]]
+id = "0-sJA_aLdN3sz8r5dYzyC"
+uri = "file://artifacts/portfolio/src/assets/project-2.png"
+type = "image"
+title = "Mobile payment app"
+
+[[generated]]
+id = "dWz7q9eU0Ivcxx1rwUaEZ"
+uri = "file://artifacts/portfolio/src/assets/project-3.png"
+type = "image"
+title = "Hospital system UI"
+
+[[generated]]
+id = "GROPcXRdbU61QFi-BlLo-"
+uri = "file://artifacts/portfolio/src/assets/project-4.png"
+type = "image"
+title = "Kanban project tool"
+
+[[generated]]
+id = "caERmR789NX4Ul-BfXwqA"
+uri = "file://artifacts/portfolio/src/assets/hobby-football.png"
+type = "image"
+title = "Football team playing"
+
+[[generated]]
+id = "EVBY_CI1vzFhOTW4xysLV"
+uri = "file://artifacts/portfolio/src/assets/hobby-music.png"
+type = "image"
+title = "Music and studio"
